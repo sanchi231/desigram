@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiGram | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+
+    <!--Font Icons-->
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    
+</head>
+
+<body>
+    <!--header section -->
+    <header class="header-file">
+        <div id="header">
+            <!--logo-->
+            <img id =" desigramlogo" src="logo/logo1.jpg" alt="logo"> 
+            &nbsp; &nbsp; 
+            
+
+            <form action="/search" id="searchform">
+                <!--search input text box-->
+                <input type="search" placeholder=" Search handicrafts, pulses, spices, etc." id="desigramsearch">
+                
+                
+                <!--search button-->
+                <button id="searchbtn" class="searchFormButton">
+                    <i class="fas fa-search"></i>
+                    <i class="material-icons">search</i>
+                    
+                </button>
+
+                <!-- <img src="" width="30px" height="30px"> -->
+
+                <!--shopping cart button-->
+                <ul id="infotools" class="right-side">
+                    <li id="cart">
+                        <button id="cartbtn">
+                            <span class="cart-icon">
+                                <i class="material-icons">Cart</i>
+                            </span>
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="cart-hide"></span>
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        
+        <div class="navigation-bar">
+            <!--navigation bar-->
+            <nav id="navbarmenu" >
+                <a href="#handicrafts" id=#handicraftmenu>Handicrafts</a>
+                <a href="#potteryproducts" id=#potteryproductsmenumenu>Pottery Products</a>
+                <a href="#spices" id=#spicesmenu>Spices</a>
+                <a href="#pulses" id=#pulsesmenu>Pulses</a>
+                <div class="handlooms-dropdown">
+                    <button class="handloom-drop-btn">Handlooms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="handloom-dropdown-content">
+                        <a href="#carpets">Carpets</a>
+                        <a href="#mats">Mats</a>
+                        <a href="#curtains">Curtains</a>
+                        <a href="#bedsheets">Bedsheets</a>
+                        <a href="#cushioncovers">Cushion Covers</a>
+                    </div>
+                </div>
+                
+                <a href="#wallhangings" id=#wallhangingsmenu>Wall Hangings</a>
+                <a href="#homedecors" id=#homedecorsmenu>Home Decors</a>
+                <div class="garments-dropdown">
+                    <button class="garments-drop-btn">Garments
+                        <i class="vnkfjd knk"></i>
+                    </button>
+                    <div class="garments-dropdown-content">
+                        <a href="#male">Male</a>
+                        <a href="#female">Female</a>
+                        <a href="#kids">Kids</a>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+
+    </header>
+    <br><br><br>
+
+    <!--image slider-->
+    <div class="slide-container">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div class="image-container">
+            <img src="images/spices-1.jpg" alt="spices" class="slider-image">
+            <img src="images/pottery_products.jpg" alt="pottery products" class="slider-image">
+            <img src="images/home_decors.jpg" alt="home decors" class="slider-image">
+        </div>
+
+        <div class="button-container">
+            <a href="#slider-image-1" class="slider-button"></a>
+            <a href="#slider-image-2" class="slider-button"></a>
+            <a href="#slider-image-3" class="slider-button"></a>
+        </div>
+    </div>
+    <br>
+    <!--product cards-->
+    <!-- <div class="row1">  
+        <div class="card">
+            <h2>Product Card</h2>
+            <img src="images/jeans.jpg" alt="Denim Jeans">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Wome Slim Fit Jeans</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+
+            <h2>Product Card</h2>
+            <img src="images/jeans.jpg" alt="Denim Jeans">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Wome Slim Fit Jeans</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+        </div>
+    </div>   
+     <br><br>    -->
+    
+     <!--footer-->
+    <footer>
+        <div class="container wrap">
+            <div class="row">
+
+                <div class="column">
+                    <div class="footer-widget about-widget">
+                        <h2 class="widget-title">About</h2>
+                        <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Quia aspernatur ad error alias doloremque dolore.</p>
+
+                        <div class="cards">
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-discover"></i>
+                        </div>
+                        <p><span>
+                            <i class="fas fa-lock"></i></span>Secure Online Payment</p>
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <div class="footer-widget categories-widget">
+                        <h2 class="widget-title">Categories</h2>
+                        <ul>
+                            <li><a href="#">Handicrafts</a></li>
+                            <li><a href="#">Pottery Products</a></li>
+                            <li><a href="#">Spices</a></li>
+                            <li><a href="#">Pulses</a></li>
+                            <li><a href="#">Handlooms</a></li>
+                            <li><a href="#">Wall Hangings</a></li>
+                            <li><a href="#">Home Decors</a></li>
+                            <li><a href="#">Garments</a></li>
+                        </ul>
+                    </div>
+                </div>    
+
+                <div class="column">
+                    <div class="footer-widget information-widget">
+                        <h2 class="widget-title">Information</h2>
+                            <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return & Exchange</a></li>
+                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">Private Policy</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                
+                <div class="column">
+                    <div class="footer-widget contact-widget">
+                        <h2 class="widget-title">Contact</h2>
+
+                        <div class="contact-address">
+                            <i class="fas fa-map-marker-alt"></i>Address: XYZ, New Delhi, India.<br>
+                            &nbsp; &nbsp; &nbsp;Pin-Code : 110005
+                        </div>
+
+                        <div class="contact-number`"><br>
+                            <i class="fas fa-phone-alt"></i> Phone: +91 1234567890
+                        </div>
+
+                        <div class="contact-mail`"><br>
+                            <i class="fas fa-envelope"></i> Email: contact@desigram.com
+                        </div><br>
+
+                        <div class="social-widget">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                            <a href=""><i class="fab fa-github-square"></i></a>
+                    
+                        </div>
+
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                 All rights reserved &nbsp;|&nbsp; Design made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
