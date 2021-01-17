@@ -23,25 +23,90 @@ body {
     font-style: normal;
     /*adding scroller on the page*/
     overflow-y: scroll;
-    
 }
 
 .header-file{
     width: 100%;
-    height: 60px;
-    background-color: white;
-    margin-top: 10px;
-    
-
+    height: 80px;
+    background-color: rgb(252, 137, 6);
 }
+
+/*The sidebar menu bar*/
+.sidebar {
+    width: 0;       /*0 width - change this width with Javascript */
+    position: fixed;    /*Stay in place*/
+    z-index: 1;         /*Stay on top*/
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;     /*Disable horizontal scroll*/
+    transition: 0.5s;       /*0.5s transition effect to slide in the sidebar*/
+    padding-top: 60px;      /*Place content 60px  from the top*/
+}
+
+/*The sidebar links*/
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/*When you mouse over the navigation links, change their color*/
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style theclose button(top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    vertical-align: middle;
+    float: left;
+    margin: 25px 20px;
+    font-size: 30px;
+    background-color: rgb(252, 137, 6);
+    border:rgb(252, 137, 6);
+    border: none;   
+}
+
+.openbtn:hover {
+    background-color: #444;
+    border: none;
+}
+
+/* Style the page content - use this if you want to push the page content to the right when you open the slide navigation */
+/* #main {
+    transition: margin-left .5s;
+    /* padding: 20px; */
+/*}*/
+
 /* logo */
 #header img{
     vertical-align: middle;
     width: 200px;
-    height: auto; 
-    float: left;            /*aligns the logo element to the right*/
-    margin-left: 10px;
-    
+    height: 90px;
+    float: left;            /*aligns the logo element to the left*/
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+
+/*On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)*/
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }
 
 /*search */
@@ -56,57 +121,76 @@ body {
     font-weight: normal;
     color:rgb(34, 32, 32);
     font-size: 13px;
-    width: 350px;
+    width: 500px;
     display: inline-block;
     margin: 0;
-    height: 27px;
+    height: 35px;
     vertical-align: middle;
-    border: 2px solid black
-    
+    border: 2px solid black;
+    margin-top: 2px;
+    border-radius: 5px;    
     
 }
 /* search button */
 button#searchbtn {
-    height: 25px;
+    height: 32px;
     margin-left: 8px;
-    border: 1px solid rgb(153, 150, 150);
-    background-color: rgb(247, 244, 244);
-    border-radius: 5%;
+    border: 2px solid #000;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 12%;
+}
+
+/*Login button*/
+#loginbtn {
+    height: 32px;
+    margin-left: 8px;
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    border-radius: 12%;
+    margin-left: 350px;
+    width: 70px;
+    font-family: cursive;
+    font-weight:bolder;
+    text-transform: uppercase;
+    
 }
 
 /*shopping cart button*/
 #info-tools {
+    float: right;
     border-radius: 5%;
-    border: 1px solid rgb(150, 147, 147);
-    background-color: rgb(238, 231, 231);
+    border: 2px solid #000;
+    
     list-style-type: none;
     
 }
 
 ul.right-side {
     display: inline-block;
-    margin-top: 0%;
-    margin-left: 40%;
     list-style-type: none;     /*removes bullet*/
-
 } 
 
 button#cartbtn {
-    height: 25px;
-    margin-right: 10px;
-    width: 100px;
+    height: 30px;
+    width: 40px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12%;
+    margin-left: -15px;
 }
 
 /*navigation bar*/
-.navigation-bar {
+/* .navigation-bar {
     overflow: hidden;
     background-color: rgb(51, 167, 23);
-    margin: 10px 0;
-    
-}
+    margin: 35px;   
+} */
 
 /*Links inside the nav bar*/
-.navigation-bar a {
+/* .navigation-bar a {
     float: left;
     text-align: center;
     color: white;
@@ -115,23 +199,23 @@ button#cartbtn {
     font-size: 16px;
     font-family: cursive;
 
-}
+} */
 
 /*Hover effect on the links in the nav bar*/
-.navigation-bar a:hover, .handlooms-dropdown button:hover, .garments-dropdown button:hover {
+/* .navigation-bar a:hover, .handlooms-dropdown button:hover, .garments-dropdown button:hover {
     background-color: rgb(252, 137, 6);
     color: white;
     border: solid white 2px;
-}
+} */
 
 /*drop-down list for handloom*/
-.handlooms-dropdown, .garments-dropdown {
+/* .handlooms-dropdown, .garments-dropdown {
     overflow: hidden;
     float: left;
-}
+} */
 
 /*drop-down button */
-.handlooms-dropdown .handloom-drop-btn, .garments-dropdown .garments-drop-btn {
+/* .handlooms-dropdown .handloom-drop-btn, .garments-dropdown .garments-drop-btn {
     font-size: 16px;
     text-align: center;
     color: white;
@@ -141,17 +225,17 @@ button#cartbtn {
     font-family: cursive;
     margin: 0;
     border:rgb(51, 167, 23) solid 2px;
-}
+} */
 
 /*Hover effect on drop down button*/
-.handloom-drop-btn:hover, .garments-drop-btn:hover {
+/* .handloom-drop-btn:hover, .garments-drop-btn:hover {
     background-color: rgb(252, 137, 6);
     color: white;
     border: solid white 2px;
-}
+} */
 
 /*drop-down button looks*/
-.handloom-dropdown-content, .garments-dropdown-content{
+/* .handloom-dropdown-content, .garments-dropdown-content{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -159,28 +243,28 @@ button#cartbtn {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 
-}
+} */
 
 /*Links inside the dropdown */
-.handloom-dropdown-content a, .garments-dropdown-content a {
+/* .handloom-dropdown-content a, .garments-dropdown-content a {
     float: none;
     color: black;
     padding: 11px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-}
+} */
 
 /*Adds a orange color to dropdown links on hover*/
-.handloom-dropdown-content a:hover, .garments-dropdown-content a:hover {
+/* .handloom-dropdown-content a:hover, .garments-dropdown-content a:hover {
     background-color: rgb(252, 137, 6);
 
-}
+} */
 
 /*Shows the drop down menu on hover*/
-.handlooms-dropdown:hover .handloom-dropdown-content, .garments-dropdown:hover .garments-dropdown-content {
+/* .handlooms-dropdown:hover .handloom-dropdown-content, .garments-dropdown:hover .garments-dropdown-content {
     display: block;
-}
+} */
 
 /*image slider*/
 .slide-container {
@@ -306,9 +390,9 @@ button#cartbtn {
 }
 
 footer {
-    background-color: #282828;
-    color: #aba8a8;
-    height: 55vh;
+    background-color: rgb(51, 167, 23);
+    color: black;
+    height: 60vh;
     
 }
 
@@ -320,12 +404,13 @@ footer {
 }
 
 .widget-title {
-    color: #fff;
+    color: #000;
     margin-bottom: 30px;
     margin-top: 5px;
     text-transform: uppercase;
+    font-family: cursive;
     font-size: 20px;
-    margin-left: 5px;
+    margin-left: 4px;
 
 }
 
@@ -333,6 +418,7 @@ footer {
     line-height: 20px;
     margin: 10px 0 30px 0;
     width: 260px;
+    font-family: cursive;
 
 }
 
@@ -343,18 +429,18 @@ footer {
 }
 
 .cards i:hover {
-    color: #fff;
+    color: rgb(54, 50, 50);
 }
 .about-widget p span {
     margin-right: 10px;
 }
 
-.categories-widget, .information-widget {
-    margin-left: 20px;
+.categories-widget, .quicklinks-widget {
+    margin-left: 0px;
 }
 
 .footer-widget ul{
-    margin-left: 20px;
+    margin-left: 4px;
 }
 
 .footer-widget ul li{
@@ -362,13 +448,14 @@ footer {
 }
 
 .footer-widget ul li a{
-    color: #aba8a8;
+    color: black;
     text-decoration: none;
     list-style-type: none;
+    font-family: cursive;
 }
 
 .footer-widget ul li a:hover{
-    color: #d2d2d2;
+    color: rgb(54, 50, 50);
     margin-left: 10px;
     transition: all .5s ease;
 
@@ -376,13 +463,15 @@ footer {
 
 .contact-address {
     padding-bottom: 20px;
-    border-bottom: 1px solid #9a98988c;
+    border-bottom: 1px solid #000;
     line-height: 20px;
+    font-family: cursive;
 
 }
 
-.contact-number, .contact-email {
-    margin: 10px 0;   
+.contact-number, .contact-mail {
+    margin: 10px 0;  
+    font-family: cursive;
 }
 
 .contact-address i, .contact-number i, .contact-email i {
@@ -392,12 +481,12 @@ footer {
 .social-widget a {
     display: inline-block;
     font-size: 28px;
-    color: #aba8a8;
+    color: #000;
     margin-right: 10px;
 }
 
 .social-widget a:hover {
-    color: #fff;
+    color: rgb(54, 50, 50);
     transition: all .5s ease; 
 }
 
@@ -409,9 +498,12 @@ footer {
 .copyright p{
     color: #fff;
     text-align: center;
+    font-family: cursive;
+    margin-bottom: 0;
 }
-
+/* 
 .copyright p a{
     text-decoration: none;
     color: #d2d2d2;
-}
+    margin-bottom: 0;
+} */
