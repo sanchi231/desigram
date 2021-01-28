@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - DesiGram</title>
+
+    <!-- Connecting to css file -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Connecting to js file -->
+    <link rel="stylesheet" href="scripts/scripts.js">
+    
+
+    <!--Font Icons-->
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+
+    <!--bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--header section-->
+    <header class="header-file">
+        <div id="header">
+            <!--menu slide bar-->
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#handicrafts" id=#handicraftmenu>Handicrafts</a>
+                <a href="#potteryproducts" id=#potteryproductsmenumenu>Pottery Products</a>
+                <a href="#spices" id=#spicesmenu>Spices</a>
+                <a href="#pulses" id=#pulsesmenu>Pulses</a>
+            </div>
+
+            <!--menu slide bar button -->
+            
+                <button class="openbtn" onclick="openNav()">
+                    <i class="fas fa-bars" ></i>
+                </button>
+           
+            
+            <!--logo-->
+            <img id =" desigramlogo" src="logo/logo1.jpg" alt="logo"> 
+            &nbsp; &nbsp; 
+            
+
+            <form action="/search" id="searchform">
+                <!--search input text box-->
+                <input type="search" placeholder=" Search handicrafts, pulses, spices, etc." id="desigramsearch">
+                
+                
+                <!--search button-->
+                <button id="searchbtn" class="searchFormButton">
+                    <i class="fas fa-search"></i>
+                    <i class="material-icons"></i>
+                    
+                </button>
+
+                <!--login button-->
+                <button id="loginbtn" class="loginButton">
+                    <i class="material-icons">Log in</i>
+                </button>
+
+                <!--shopping cart button-->
+                <ul id="infotools" class="right-side">
+                    <li id="cart">
+                        <button id="cartbtn">
+                            <span class="cart-icon">
+                                <i class="material-icons"></i>
+                            </span>
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="cart-hide"></span>
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </header>
+    <br><br><br>
+    
+    <!--featured products-->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <h2 class="sub-title"></h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product1.jpg">
+                <h4>Top Saree Picks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>      
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product2.jpg">
+                <h4>Handloom Masks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>      
+                </div>
+                <p>$50.00</p>
+            </div>
+            
+            <div class="col-4">
+                <img src="images/product3.jpg">
+                <h4>Weaves of West Bengal</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>      
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product4.jpg">
+                <h4>Sarees by Biswa Bangla</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>      
+                </div>
+                <p>$50.00</p>
+            </div>
+                    
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product9.jpg">
+                    <h4>Black White Striped Boot Cut Leggings</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/product10.jpg">
+                    <h4>Rusts Collared Utility Jumpsuit</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                
+                <div class="col-4">
+                    <img src="images/product11.jpg">
+                    <h4>Blue Stripped Smocked Strappy Top</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/product12.jpg">
+                    <h4>Mustard Floral Belted Back Ruffed Dress</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/product13.jpg">
+                    <h4>Green White Striped Belted Jumpsuit</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/product14.jpg">
+                    <h4>Mint Ditsy Floral Belted Shift Dress</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                
+                <div class="col-4">
+                    <img src="images/product15.jpg">
+                    <h4>Blue Grey Embellished Shoulder Maxi Dress</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/product16.jpg">
+                    <h4>Grey Floral Smocked Strappy Top</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>      
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+            </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container wrap">
+            <div class="row1">
+                <div class="column">
+                    <div class="footer-widget about-widget">
+                        <h2 class="widget-title">About Us</h2>
+                        <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Quia aspernatur ad error alias doloremque dolore.</p>
+
+                        <div class="cards">
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-discover"></i>
+                        </div>
+                        <p><span>
+                            <i class="fas fa-lock"></i></span>Secure Online Payment</p>
+                    </div>
+
+                </div>  
+
+                <div class="column">
+                    <div class="footer-widget quicklinks-widget">
+                        <h2 class="widget-title">Quick Links</h2>
+                            <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return & Exchange</a></li>
+                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">Private Policy</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                
+                <div class="column">
+                    <div class="footer-widget categories-widget">
+                        <h2 class="widget-title">Categories</h2>
+                        <ul>
+                            <li><a href="#">Handicrafts</a></li>
+                            <li><a href="#">Pottery Products</a></li>
+                            <li><a href="#">Spices</a></li>
+                            <li><a href="#">Pulses</a></li>
+                            <li><a href="#">Handlooms</a></li>
+                            <li><a href="#">Wall Hangings</a></li>
+                            <li><a href="#">Home Decors</a></li>
+                            <li><a href="#">Garments</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="footer-widget contact-widget">
+                        <h2 class="widget-title">Contact Us</h2>
+
+                        <div class="contact-address">
+                            <i class="fas fa-map-marker-alt"></i>Address: XYZ, New Delhi, India.<br>
+                            &nbsp; &nbsp; &nbsp;Pin-Code : 110005
+                        </div>
+
+                        <div class="contact-number"><br>
+                            <i class="fas fa-phone-alt"></i>Phone: +91 1234567890
+                        </div>
+
+                        <div class="contact-mail"><br>
+                            <i class="fas fa-envelope"></i> Email: contact@desigram.com
+                        </div><br>
+
+                        <div class="social-widget">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fab fa-github-square"></i></a>
+                    
+                        </div>
+
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                 All rights reserved &nbsp;|&nbsp; Design made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
