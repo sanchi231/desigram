@@ -235,6 +235,13 @@ button#cartbtn {
     width: 100%;
 }
 
+.col-4 button {
+    border: none;
+    padding: 0px;
+    padding-bottom: 0px;
+
+}
+
 /* .col-4 h4, p, .rating{
     padding-left: 32px;
 } */
