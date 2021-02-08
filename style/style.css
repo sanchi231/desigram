@@ -218,7 +218,8 @@ button#cartbtn {
     font-size: 1.8em;
     max-height: 5em;
     font-weight: 550;
-    color: #3e4152;
+    /* color: #3e4152; */
+    color: #000;
     font-family: sans-serif;
     position: relative;
     padding-bottom: 15px;
