@@ -291,7 +291,7 @@ footer {
     background-color: rgb(51, 167, 23);
     color: black;
     height: inherit;
-    position: fixed;
+    position: statis;
     left: 0;
     bottom: 0;
     width: 100%;
