@@ -27,6 +27,7 @@ html {
 
 body {
     background: linear-gradient(35deg, #fff, orange);
+    background-color: no-repeat;
     /*adding background color as linear gradient*/
     color: #222;
     cursor: auto;
@@ -143,11 +144,11 @@ ul.right-side {
 } 
 
 button#cartbtn {
-    height: 31px;
+    height: 33px;
     width: 40px;
     font-size: 20px;
-    margin-left: 430px;
-    margin-top: 7px;
+    margin-left: -30px;
+    margin-top: 9px;
     background-color: white;
     border: 2px solid black;
     border-radius: 12%;
@@ -193,17 +194,13 @@ button#cartbtn {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width: 1295) and (min-width: 900){
+    #cartbtn{
+        position: absolute;
+        display: inline-block;
+        
+    }
+}
 
 
 /* Featured products */
@@ -338,12 +335,14 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    
 }
 
 .footer-widget {
     /* background-color: rgb(252, 137, 6); */
     margin: 25px;
     text-align: justify;
+    
 }
 
 .widget-title {

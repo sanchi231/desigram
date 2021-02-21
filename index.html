@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--adding title to the page-->
     <title>All Products - DesiGram</title>
 
     <!-- Connecting to css file -->
     <link rel="stylesheet" href="style/style.css">
     <!-- Connecting to js file -->
-    <link rel="stylesheet" href="scripts/scripts.js">
+    <script src="scripts/scripts.js"></script>
     
 
     <!--Font Icons-->
@@ -42,11 +43,10 @@
             <img id =" desigramlogo" src="logo/logo.png" alt="logo"> 
             &nbsp; &nbsp; 
             
-
+            <!--form-->
             <form action="/search" id="searchform">
                 <!--search input text box-->
-                <input type="search" placeholder=" Search handicrafts, pulses, spices, etc." id="desigramsearch">
-                
+                <input type="search" placeholder=" Search handicrafts, pulses, spices, etc." id="desigramsearch" name="q">
                 
                 <!--search button-->
                 <button id="searchbtn" class="searchFormButton">
@@ -71,6 +71,7 @@
                         </button>
                     </li>
                 </ul>
+
             </form>
         </div>
 
