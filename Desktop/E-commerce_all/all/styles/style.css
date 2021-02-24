@@ -1,0 +1,498 @@
+/* ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit--scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+} */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*adding vertical scroller on the page*/
+    overflow-y: scroll;
+}
+
+/*responsiveness for the scroll bar*/
+@media(max-width: 1348px){
+    html{
+        overflow-y: scroll;
+    }
+}
+
+body {
+    background: linear-gradient(35deg, #fff, orange);
+    background-color: no-repeat;
+    /*adding background color as linear gradient*/
+    color: #222;
+    cursor: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-file #header{ 
+    /* width: 100%; */
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+}
+
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 65px;
+    transition: 0.5s;  
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 36px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Lora', serif;
+    /* color: rgb(248, 174, 89); */
+    color: #111;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidebar a:hover{
+    color: #fff;
+    background-color:rgb(248, 149, 36);
+    border-radius: 10px;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 10px 10px;
+
+}
+
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #111;
+    padding: 20px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #fff;
+}
+
+/* Style the page content - use this if you want to push the page content to the right when you open the slide navigation */ 
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* logo */
+#header img{
+    /* vertical-align: middle; */
+    margin-top: 0px;
+    width: 200px;
+    height: 90px;
+    float: left;           /* aligns the logo element to the left */
+    padding: 20px 25px 25px 5px;
+}
+
+
+/*On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)*/
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/*search */
+#searchform {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/* search text box */
+#desigramsearch {
+    font-weight: normal;
+    color:rgb(34, 32, 32);
+    font-size: 0.9em;
+    width: 400px;
+    display: inline-block;
+    margin: 0;
+    height: 34px;
+    vertical-align: middle;
+    border: 2px solid black;
+    margin-top: 2px;
+    border-radius: 5px;    
+    
+}
+/* search button */
+#searchbtn {
+    height: 34px;
+    width: 32px;
+    margin: 9px 10px 8px 11px;
+    border: 2px solid #000;
+    background-color: white; 
+    border-radius: 12%;
+    font-size: 1em;
+}
+
+/*Login button*/
+#loginbtn {
+    height: 35px;
+    width: 75px;
+    float: right;
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    border-radius: 12%;
+    margin: 10px 10px 9px 10px;
+    font-size: 0.92em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+}
+
+/*shopping cart button*/
+#info-tools {
+    float: right;
+    border-radius: 5%;
+    border: 2px solid #000;
+    list-style-type: none;
+    
+}
+
+ul.right-side {
+    display: inline-block;
+    list-style-type: none;     /*removes bullet*/
+} 
+
+button#cartbtn {
+    height: 33px;
+    width: 40px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px 10px 9px 380px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12%;
+}
+
+/*Adding the responsiveness to the header*/
+@media (max-width: 900px) and (min-width: 500px){
+    #searchform{
+        margin-left: 0px;
+        position: relative;
+
+    }
+    #desigramsearch{
+        position: absolute;
+        width: 300px;
+        font-size: 13px;
+        float: left;
+        left: 10px;
+        top: 75px;
+        right: 5px;
+    }
+
+    #searchbtn{
+        position: absolute;
+        left: 213px;
+        top: 72px;
+        width: 30px;
+        height: 33px;
+        margin-left: 100px;
+    }
+
+    #loginbtn{
+        position: absolute;
+        top: 6px;
+        right: 3px;
+    }
+
+    #cartbtn{
+        position: absolute;
+        top: 71px;
+        right: 18px;
+        height: 33px;
+    }
+}
+
+@media(max-width: 1295) and (min-width: 900){
+    #cartbtn{
+        position: absolute;
+        display: inline-block;
+        
+    }
+}
+
+
+/* Featured products */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    /* background: linear-gradient(#fff, orange); */
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    transition: transform 0.5s;
+    
+}
+
+
+.title {
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    max-height: 5em;
+    font-weight: 550;
+    /* color: #3e4152; */
+    color: #000;
+    font-family: sans-serif;
+    position: relative;
+    padding-bottom: 15px;
+    
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    transform: translateX(-80%);
+    
+}
+
+/*Adding responsiveness to the title featured products and latest products*/
+@media(max-width: 1160px) and (min-width: 500px){
+    .title{
+        margin-left: 45px;
+    }
+
+    .title::after{
+        position: absolute;
+        align-items: center;
+    }
+}
+
+
+
+.col-4 img {
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.col-4 button {
+    border: none;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+/* .col-4 h4, p, .rating{
+    padding-left: 32px;
+} */
+
+.col-4 h4 {
+    color: #3e4152;
+    font-weight: 550;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.col-5 button,.col-5 img {
+    border-radius: 50%;
+}
+
+/*Footer*/
+.column {
+    float: left;
+    width: 24%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+
+  }
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: rgb(51, 167, 23);
+    color: black;
+    height: inherit;
+    position: statis;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer-widget {
+    /* background-color: rgb(252, 137, 6); */
+    margin: 25px;
+    text-align: justify;
+    
+}
+
+.widget-title {
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 20px;
+    margin-left: 4px;
+
+}
+
+.about-widget p {
+    line-height: 20px;
+    margin: 10px 0 30px 0;
+    width: 260px;
+    font-family: cursive;
+
+}
+
+.cards i{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;    
+}
+
+.cards i:hover {
+    color: rgb(54, 50, 50);
+}
+.about-widget p span {
+    margin-right: 10px;
+}
+
+.categories-widget, .quicklinks-widget {
+    margin-left: 0px;
+}
+
+.footer-widget ul{
+    margin-left: 4px;
+}
+
+.footer-widget ul li{
+    padding-bottom: 14px;
+}
+
+.footer-widget ul li a{
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: cursive;
+}
+
+.footer-widget ul li a:hover{
+    color: rgb(54, 50, 50);
+    margin-left: 10px;
+    transition: all .5s ease;
+
+}
+
+.contact-address {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    line-height: 20px;
+    font-family: cursive;
+
+}
+
+.contact-number, .contact-mail {
+    margin: 10px 0;  
+    font-family: cursive;
+}
+
+.contact-address i, .contact-number i, .contact-email i {
+    margin-right: 10px;
+}
+
+.social-widget a {
+    display: inline-block;
+    font-size: 28px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.social-widget a:hover {
+    color: rgb(54, 50, 50);
+    transition: all .5s ease; 
+}
+
+.copyright {
+    background-color: #000;
+    padding: 10px;
+    margin: 0px;
+}
+
+.copyright p{
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 0;
+    
+
+}
+
+.copyright p a{
+    text-decoration: none;
+    color: #d2d2d2;
+    margin-bottom: 0;
+   
+}
